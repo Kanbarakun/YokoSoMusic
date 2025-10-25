@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Yoko'So'Music — Japanese Music</title>
+
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar" aria-label="Main navigation">
+    <header class="brand">
+      <h1 id="siteName">Yoko'So'Music</h1>
+      <p class="tagline">Japanese Music • Curated</p>
+    </header>
+
+    <nav class="nav">
+      <button class="nav-btn active" aria-pressed="true">
+        <i class="fa-solid fa-house"></i>
+        <span>Home</span>
+      </button>
+      <button class="nav-btn">
+        <i class="fa-solid fa-heart"></i>
+        <span>Favorites</span>
+      </button>
+      <button class="nav-btn">
+        <i class="fa-solid fa-clock-rotate-left"></i>
+        <span>Recently Played</span>
+      </button>
+      <button class="nav-btn">
+        <i class="fa-solid fa-list"></i>
+        <span>Playlists</span>
+      </button>
+      <button class="nav-btn">
+        <i class="fa-solid fa-bars"></i>
+        <span>Queue</span>
+      </button>
+      <button class="nav-btn">
+        <i class="fa-solid fa-plus"></i>
+        <span>New Playlist</span>
+      </button>
+    </nav>
+
+    <div class="sidebar-bottom">
+      <label class="lang">
+        <i class="fa-solid fa-globe"></i>
+        <select aria-label="Language">
+          <option value="en" selected>English</option>
+          <option value="jp">日本語</option>
+          <option value="ph">Filipino</option>
+        </select>
+      </label>
+
+      <small class="copyright">© Yoko'So'Music</small>
+    </div>
+  </aside>
+
+  <main class="main">
+    <section class="header-row">
+      <div class="search-bar" role="search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input id="search" type="text" placeholder="What do you want to listen to?" aria-label="Search songs or artists">
+      </div>
+      <div class="hero">
+        <h2 id="homeTitle">Recommended Japanese Songs</h2>
+        <p class="subtitle">A small curated selection — classic anime themes and recent hits.</p>
+      </div>
+    </section>
+
+    <section class="songs-grid" aria-label="Songs">
+      <!-- Song Card 1 -->
+      <article class="song-card" tabindex="0">
+        <figure class="cover">
+          <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Zankoku_na_Tenshi_no_Teeze.jpg" alt="残酷な天使のテーゼ cover">
+        </figure>
+        <div class="meta">
+          <h3 class="title">残酷な天使のテーゼ</h3>
+          <p class="artist">高橋洋子</p>
+        </div>
+        <button class="play-btn" aria-label="Play 残酷な天使のテーゼ">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <div class="actions">
+          <button class="icon-btn" aria-label="Favorite"><i class="fa-solid fa-heart"></i></button>
+          <button class="icon-btn" aria-label="Add to playlist"><i class="fa-solid fa-plus"></i></button>
+          <button class="icon-btn" aria-label="Add to queue"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </article>
+
+      <!-- Song Card 2 -->
+      <article class="song-card" tabindex="0">
+        <figure class="cover">
+          <img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Yonezu_Kenshi_-_Lemon.png" alt="Lemon cover">
+        </figure>
+        <div class="meta">
+          <h3 class="title">Lemon</h3>
+          <p class="artist">米津玄師</p>
+        </div>
+        <button class="play-btn" aria-label="Play Lemon">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <div class="actions">
+          <button class="icon-btn" aria-label="Favorite"><i class="fa-solid fa-heart"></i></button>
+          <button class="icon-btn" aria-label="Add to playlist"><i class="fa-solid fa-plus"></i></button>
+          <button class="icon-btn" aria-label="Add to queue"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </article>
+
+      <!-- Song Card 3 -->
+      <article class="song-card" tabindex="0">
+        <figure class="cover">
+          <img src="https://upload.wikimedia.org/wikipedia/en/8/84/Official_HIGE_DANDism_-_Pretender.png" alt="Pretender cover">
+        </figure>
+        <div class="meta">
+          <h3 class="title">Pretender</h3>
+          <p class="artist">Official髭男dism</p>
+        </div>
+        <button class="play-btn" aria-label="Play Pretender">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <div class="actions">
+          <button class="icon-btn" aria-label="Favorite"><i class="fa-solid fa-heart"></i></button>
+          <button class="icon-btn" aria-label="Add to playlist"><i class="fa-solid fa-plus"></i></button>
+          <button class="icon-btn" aria-label="Add to queue"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </article>
+
+      <!-- Song Card 4 -->
+      <article class="song-card" tabindex="0">
+        <figure class="cover">
+          <img src="https://upload.wikimedia.org/wikipedia/en/4/47/Ikimono_Gakari_-_Blue_Bird.png" alt="Blue Bird cover">
+        </figure>
+        <div class="meta">
+          <h3 class="title">Blue Bird</h3>
+          <p class="artist">いきものがかり</p>
+        </div>
+        <button class="play-btn" aria-label="Play Blue Bird">
+          <i class="fa-solid fa-play"></i>
+        </button>
+        <div class="actions">
+          <button class="icon-btn" aria-label="Favorite"><i class="fa-solid fa-heart"></i></button>
+          <button class="icon-btn" aria-label="Add to playlist"><i class="fa-solid fa-plus"></i></button>
+          <button class="icon-btn" aria-label="Add to queue"><i class="fa-solid fa-bars"></i></button>
+        </div>
+      </article>
+    </section>
+
+    <section class="lists-row">
+      <div class="list-panel">
+        <h4>Favorites</h4>
+        <ul class="list">
+          <li><img src="https://upload.wikimedia.org/wikipedia/en/9/9e/Zankoku_na_Tenshi_no_Teeze.jpg" alt=""><span>残酷な天使のテーゼ — 高橋洋子</span></li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/en/7/7a/Yonezu_Kenshi_-_Lemon.png" alt=""><span>Lemon — 米津玄師</span></li>
+        </ul>
+      </div>
+
+      <div class="list-panel">
+        <h4>Recently Played</h4>
+        <ul class="list">
+          <li><img src="https://upload.wikimedia.org/wikipedia/en/8/84/Official_HIGE_DANDism_-_Pretender.png" alt=""><span>Pretender — Official髭男dism</span></li>
+          <li><img src="https://upload.wikimedia.org/wikipedia/en/4/47/Ikimono_Gakari_-_Blue_Bird.png" alt=""><span>Blue Bird — いきものがかり</span></li>
+        </ul>
+      </div>
+
+      <div class="list-panel">
+        <h4>Playlists</h4>
+        <ul class="list">
+          <li><i class="fa-solid fa-record-vinyl"></i><span>Anime Classics</span></li>
+          <li><i class="fa-solid fa-record-vinyl"></i><span>J-Pop Hits</span></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- Static player bar (non-functional, purely UI) -->
+  <footer class="player-bar" role="region" aria-label="Player controls">
+    <div class="now-playing">
+      <img class="now-cover" src="https://upload.wikimedia.org/wikipedia/en/9/9e/Zankoku_na_Tenshi_no_Teeze.jpg" alt="Now playing cover">
+      <div class="now-meta">
+        <strong>残酷な天使のテーゼ</strong>
+        <span>高橋洋子</span>
+      </div>
+    </div>
+
+    <div class="player-controls">
+      <button class="ctrl"><i class="fa-solid fa-random"></i></button>
+      <button class="ctrl"><i class="fa-solid fa-backward"></i></button>
+      <button class="ctrl play"><i class="fa-solid fa-circle-play"></i></button>
+      <button class="ctrl"><i class="fa-solid fa-forward"></i></button>
+      <button class="ctrl"><i class="fa-solid fa-repeat"></i></button>
+    </div>
+
+    <div class="progress">
+      <span class="time">0:00</span>
+      <div class="bar" aria-hidden="true">
+        <div class="bar-fill" style="width:28%"></div>
+      </div>
+      <span class="time">4:08</span>
+    </div>
+
+    <div class="volume">
+      <i class="fa-solid fa-volume-high"></i>
+      <div class="vol-bar" aria-hidden="true"><div class="vol-fill" style="width:80%"></div></div>
+    </div>
+  </footer>
+</body>
+</html>
